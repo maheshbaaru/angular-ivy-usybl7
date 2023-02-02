@@ -1,0 +1,40 @@
+<!-- <button onclick="myFunction()">Try it</button>
+<button onclick="addbtn()">add it</button> -->
+
+<table class="style">
+  <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>email</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let item of row; let i = index">
+    <td><input type="text" /></td>
+    <td><input type="text" /></td>
+    <td><input type="text" /></td>
+    <td>
+      <button (click)="deleteRow(i)">delete</button>
+      <button (click)="addTable()">Add Row</button>
+    </td>
+  </tr>
+</table>
+
+<!-- 
+<div id="POItablediv">
+  <input type="button" id="addPOIbutton" value="Add POIs" /><br/><br/>
+  <table id="POITable" border="1">
+    <tr>
+      <td>POI</td>
+      <td>Latitude</td>
+      <td>Longitude</td>
+      <td>Delete?</td>
+      <td>Add Rows?</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><input size=25 type="text" id="latbox" /></td>
+      <td><input size=25 type="text" id="lngbox" readonly=true/></td>
+      <td><input type="button" id="delPOIbutton" value="Delete" onclick="deleteRow(this)" /></td>
+      <td><input type="button" id="addmorePOIbutton" value="Add More POIs" onclick="insRow()" /></td>
+    </tr>
+  </table> -->
